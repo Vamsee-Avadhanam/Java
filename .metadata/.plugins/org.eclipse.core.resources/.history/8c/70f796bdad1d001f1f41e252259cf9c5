@@ -1,0 +1,16 @@
+package com.practice;
+
+public class ClassA 
+{	
+	void explicit()
+	{
+		int i1=10;
+		byte b1=(byte) i1;
+		System.out.println(i1);
+	}
+	
+	public static void main(String[] args) 
+	{
+		new ClassA().explicit();
+	}
+}

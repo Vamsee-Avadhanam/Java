@@ -1,0 +1,16 @@
+package com.practice;
+
+public class ClassA 
+{	
+	int x=10;
+	
+	public void meth1()
+	{
+		System.out.println(x);
+	}
+	public static void main(String[] args) 
+	{
+		ClassA aobj=new ClassA();
+		aobj.meth1();
+	}
+}

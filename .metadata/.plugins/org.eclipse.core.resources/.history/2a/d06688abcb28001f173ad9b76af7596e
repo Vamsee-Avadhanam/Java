@@ -1,0 +1,5 @@
+package com.phenom;
+@FunctionalInterface
+public interface Interfacefi {
+	void meth1();
+}

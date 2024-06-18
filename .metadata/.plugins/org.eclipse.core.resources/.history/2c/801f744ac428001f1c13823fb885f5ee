@@ -1,0 +1,29 @@
+package com.phenom;
+//
+public class ClassA
+{
+	void meth1()
+	{
+		System.out.println("Meth1 called");
+	}
+	void msg()
+	{
+		System.out.println("Java is awesome");
+	}
+	public static void main(String[] args)
+	{
+		ClassA aobj=new ClassA()
+		{
+			@Override
+			void meth1()
+			{
+				System.out.println("meth1() overridden");
+				super.meth1();
+			}
+		};
+		aobj.meth1();
+		System.out.println("---------");
+		new ClassA().msg();
+	}
+}
+

@@ -1,0 +1,17 @@
+package com.practice;
+
+public class ClassB1 
+{
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Hello World");
+		
+
+		
+	}
+	 static {
+	
+		System.out.println("hello world");
+	}
+}

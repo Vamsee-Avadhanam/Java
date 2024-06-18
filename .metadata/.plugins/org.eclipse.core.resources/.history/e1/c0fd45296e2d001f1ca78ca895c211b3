@@ -1,0 +1,13 @@
+package com.pack2;
+
+public class ClassA {
+
+	
+	public static void main(String[] args) 
+	{
+		String str="Vamsee";
+		String reversed=new StringBuilder(str).reverse().toString();
+		
+		System.out.println(reversed);
+	}
+}

@@ -1,0 +1,20 @@
+package com.pack1;
+
+import java.util.Scanner;
+
+public class ClassA {
+
+	 public static void main(String[] args) 
+	 {
+		 Scanner sc=new Scanner(System.in);
+		 int N=sc.nextInt();
+	         for (int i = 1; i <= 10; i++) {
+	            // Calculate the result of N * i
+	            int result = N * i;
+	            // Print the output in the required format
+	            System.out.printf("%d x %d = %d%n", N, i, result);
+	        
+	         }
+	        sc.close();
+	    }
+}

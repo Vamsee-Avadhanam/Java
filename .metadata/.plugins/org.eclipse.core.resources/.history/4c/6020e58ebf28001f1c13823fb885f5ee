@@ -1,0 +1,50 @@
+package com.phenom;
+//
+public class ClassA
+{
+	int a=10;
+	static int b=20;
+	static
+	{
+		System.out.println("Outer  class Static block");
+	}
+	{
+		System.out.println("Outer class Instance block");
+	}
+	ClassA()
+	{
+		System.out.println("Outer class Constructor");
+	}
+	
+	static class InnerClassA
+	{
+		void show()
+		{
+			System.out.println("Inner Class method");
+			System.out.println("Outer class Instance variable :"+new ClassA().a);
+			System.out.println("Outer Class Static block: "+b);
+		}
+		static 
+		{
+			System.out.println("Inner Class Static block");
+		}
+		{
+			System.out.println("InnerClass Instance block");
+		}
+		InnerClassA()
+		{
+			System.out.println("Inner ClassA constructor");
+		}
+		public static void main(String[] args) {
+			System.out.println("Inner ClassA main method");
+			InnerClassA iobj=new InnerClassA();
+			iobj.show();
+		}
+	}
+	public static void main(String[] args) {
+		
+		System.out.println("Outer Class Main Method");
+		ClassA aobj=new ClassA();
+	}
+}
+

@@ -1,0 +1,17 @@
+package com.phenom;
+
+import java.util.Scanner;
+
+public class ClassA {
+
+	public static void main(String[] args)
+	{
+		
+	
+		char a = 0;
+		System.out.println(a);
+		
+	}
+
+}
+

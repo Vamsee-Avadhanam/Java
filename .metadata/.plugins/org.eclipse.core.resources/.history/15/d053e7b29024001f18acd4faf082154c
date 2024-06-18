@@ -1,0 +1,28 @@
+package com.phenom;
+
+import java.util.Scanner;
+
+public class ClassA {
+
+	public static void main(String[] args)
+	{
+
+		Scanner sc=new Scanner(System.in);
+		
+		char ch = 'a';
+
+        switch (ch) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println(ch + " is vowel");
+                break;
+            default:
+                System.out.println(ch + " is consonant");
+		
+	}
+
+}
+

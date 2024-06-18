@@ -1,0 +1,16 @@
+package com.phenom;
+import java.util.Arrays;
+//Arrays Sorting
+public class ClassA
+{
+	void meth1()
+	{
+		int arr[]= {10,4,5,7,2,8,1,9};
+		Arrays.parallelSort(arr);
+		System.out.println(arr.toString());
+	}
+	public static void main(String[] args) {
+		new ClassA().meth1();
+	}
+}
+

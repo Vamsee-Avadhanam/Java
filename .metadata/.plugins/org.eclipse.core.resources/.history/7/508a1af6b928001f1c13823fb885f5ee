@@ -1,0 +1,16 @@
+package com.phenom;
+//
+public class ClassA
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Outer class main");
+	}
+	class InnerClassA1
+	{
+		public static void main(String[] args) {
+			System.out.println("Inner class Static");
+		}
+	}
+}
+

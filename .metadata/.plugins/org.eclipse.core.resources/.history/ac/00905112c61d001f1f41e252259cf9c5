@@ -1,0 +1,25 @@
+package com.practice;
+
+public class ClassA 
+{	
+	void explicit()
+	{
+		int arr1[];
+		arr1=new int[5];
+		int arr2[]=new int[5];
+		int arr3[]= {10,20,30,40,50};
+		int arr4[]=new int[] {11,22,33,44,55};
+		System.out.println("arr1.length"+arr1.length);
+		System.out.println("arr1.length"+arr2.length);
+		System.out.println("arr1.length"+arr3.length);
+		System.out.println("arr1.length"+arr4.length);
+		
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		new ClassA().explicit();
+
+	}
+}

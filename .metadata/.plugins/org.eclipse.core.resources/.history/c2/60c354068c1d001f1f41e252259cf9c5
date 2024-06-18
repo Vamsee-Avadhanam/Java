@@ -1,0 +1,22 @@
+package com.practice;
+
+public class ClassA 
+{
+	void meth1()
+	{
+		System.out.println("Hello");
+	}
+	protected void finalize()
+	{
+		System.out.println("Garbage has been collected");
+	}
+	public static void main(String[] args) 
+	{
+		ClassA aobj1=new ClassA();
+		aobj1.meth1();
+		
+		ClassA aobj2=new ClassA();
+		aobj2=null;
+		System.gc();
+	}
+}

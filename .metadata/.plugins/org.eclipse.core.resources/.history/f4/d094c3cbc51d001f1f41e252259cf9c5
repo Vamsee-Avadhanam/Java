@@ -1,0 +1,17 @@
+package com.practice;
+
+public class ClassA 
+{	
+	void explicit()
+	{
+		int arr[]= {20,20,30,40,50};
+		System.out.println(arr.length);
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		new ClassA().explicit();
+
+	}
+}

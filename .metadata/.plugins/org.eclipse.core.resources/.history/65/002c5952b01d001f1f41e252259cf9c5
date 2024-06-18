@@ -1,0 +1,18 @@
+package com.practice;
+
+public class ClassA 
+{	
+	void explicit()
+	{
+		int i1=1000;
+		Integer i2=i1;
+		Integer i3=Integer.valueOf(i1);
+		System.out.println(i2);
+	}
+	
+	public static void main(String[] args) 
+	{
+		new ClassA().explicit();
+
+	}
+}

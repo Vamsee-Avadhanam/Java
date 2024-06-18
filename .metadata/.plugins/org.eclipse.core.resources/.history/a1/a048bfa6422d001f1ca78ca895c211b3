@@ -1,0 +1,25 @@
+package com.pack1;
+
+//Basic program on an Array
+public class ClassA {
+
+	public static void main(String[] args)
+	{
+		
+		System.out.println("Duplicate elements :");
+		int arr[]= {10,3,4,5,3,5,7,8,9,2};
+		
+		for(int i=0;i<arr.length-1;i++)
+		{
+			for(int j=i+1;j<arr.length;j++)
+			{
+				if(arr[i]==arr[j])
+					System.out.print(arr[i]);
+			}
+				
+		}
+	}
+
+}
+
+

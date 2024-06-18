@@ -1,0 +1,52 @@
+package com.phenom;
+//
+public class ClassA
+{
+	private void meth1()
+	{
+		System.out.println("Outer class Method");
+	}
+	static
+	{
+		System.out.println("Outer class Static block");
+	}
+	
+	{
+		System.out.println("Outer class Instance block");
+	}
+	ClassA()
+	{
+		System.out.println("Outer class Constructor");
+	}
+	public class InnerClassA
+	{
+		static void show()
+		{
+			System.out.println("Inner class Method");
+		}
+		{
+			System.out.println("Inner class Instance Block");
+			
+		}
+		InnerClassA()
+		{
+			System.out.println("Inner ClassA constructor");
+		}
+		public static void main(String[] args) {
+			
+			System.out.println("Inner ClassA Main method");
+			InnerClassA iobj=new ClassA().new InnerClassA();
+			iobj.show();
+		}
+		
+	}
+	public static void main(String[] args)
+	{
+		System.out.println("Outer class main method");
+		ClassA aobj=new ClassA();
+		
+		
+	}
+	
+}
+

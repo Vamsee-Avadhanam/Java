@@ -1,0 +1,55 @@
+package com.practice;
+
+import java.util.Arrays;
+
+public class ClassA 
+{	
+	void explicit()
+	{
+		int arr1[];
+		arr1=new int[5];
+		int arr2[]=new int[5];
+		int arr3[]= {10,20,30,40,50};
+		int arr4[]=new int[] {11,22,33,44,55};
+		System.out.println("arr1.length "+arr1.length);
+		System.out.println("arr1.length "+arr2.length);
+		System.out.println("arr1.length "+arr3.length);
+		System.out.println("arr1.length "+arr4.length);
+		
+		System.out.println(arr1);
+		System.out.println(arr2);
+		System.out.println(arr3);
+		System.out.println(arr4);
+		
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(Arrays.toString(arr2));
+		System.out.println(Arrays.toString(arr3));
+		System.out.println(Arrays.toString(arr4));
+		
+		System.out.println(arr2[2]=30);
+		System.out.println(Arrays.toString(arr2));
+		System.out.println(arr3[3]);
+		
+		for(int i=0;i<=arr3.length-1;i++)
+		{
+			System.out.print(arr3[i]+" ");
+		}
+		System.out.println();
+		for(int i=arr3.length-1;i>=0;i--)
+		{
+			System.out.print(arr3[i]+" ");
+		}
+		System.out.println();
+		
+		for(int i=1;i<=arr4.length-1;i++)
+		{
+			System.out.print(arr4[i]+" ");
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		new ClassA().explicit();
+
+	}
+}

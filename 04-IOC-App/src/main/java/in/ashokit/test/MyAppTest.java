@@ -1,0 +1,19 @@
+package in.ashokit.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.ashokit.service.IUserService;
+import in.ashokit.service.UserServiceImpl;
+public class MyAppTest {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ctxt=new ClassPathXmlApplicationContext("beans.xml");
+		
+		IUserService service =ctxt.getBean(UserServiceImpl.class);
+		String Name=service.getName(100);
+		
+		System.out.println("User name:"+ Name);
+	}
+}

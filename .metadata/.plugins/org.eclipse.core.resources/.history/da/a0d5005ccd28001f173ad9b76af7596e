@@ -1,0 +1,16 @@
+package com.phenom;
+//
+public class ClassA
+{
+	void display()
+	{
+		System.out.println("Implementing Lambda expressions");
+		
+		Interfacefi x=(int a,int b)->System.out.println("Hello world "+(a+b));
+		x.meth1(10,20);
+	}
+	public static void main(String[] args) {
+		new ClassA().display();
+	}
+}
+

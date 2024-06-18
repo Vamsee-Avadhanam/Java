@@ -1,0 +1,24 @@
+package com.phenom;
+//
+public class ClassA
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Outer class main");
+	}
+}
+
+class ClassA1{
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("ClassA1 main");
+	}
+}
+class ClassA2{
+	
+	public static void main(String[] args)
+	{
+		System.out.println(" classA2 main");
+	}
+}

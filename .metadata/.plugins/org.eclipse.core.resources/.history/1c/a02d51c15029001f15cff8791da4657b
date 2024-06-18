@@ -1,0 +1,7 @@
+package com.phenom;
+
+@FunctionalInterface
+public interface InterfaceA
+{
+	
+}

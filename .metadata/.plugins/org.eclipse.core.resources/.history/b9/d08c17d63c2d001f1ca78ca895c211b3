@@ -1,0 +1,57 @@
+package com.pack1;
+
+
+public class ClassA {
+
+	
+	    public static void main(String[] args) {
+	        // Step 1: Declare and initialize an array of integers
+	        int[] numbers = {5, 10, 15, 20, 25, 30};
+
+	        // Step 2: Access elements of the array
+	        System.out.println("First element: " + numbers[0]);
+	        System.out.println("Third element: " + numbers[2]);
+	        System.out.println("Last element: " + numbers[numbers.length - 1]);
+
+	        // Step 3: Modify an element in the array
+	        numbers[1] = 12;
+	        System.out.println("Modified second element: " + numbers[1]);
+
+	        // Step 4: Print all elements of the array
+	        System.out.print("All elements in the array: ");
+	        for (int i = 0; i < numbers.length; i++) {
+	            System.out.print(numbers[i] + " ");
+	        }
+	        System.out.println();
+
+	        // Step 5: Calculate the sum of all elements
+	        int sum = 0;
+	        for (int i = 0; i < numbers.length; i++) {
+	            sum += numbers[i];
+	        }
+	        System.out.println("Sum of all elements: " + sum);
+
+	        // Step 6: Calculate the average of all elements
+	        double average = (double) sum / numbers.length;
+	        System.out.println("Average of all elements: " + average);
+
+	        // Step 7: Find the maximum element in the array
+	        int max = numbers[0];
+	        for (int i = 1; i < numbers.length; i++) {
+	            if (numbers[i] > max) {
+	                max = numbers[i];
+	            }
+	        }
+	        System.out.println("Maximum element: " + max);
+
+	        // Step 8: Find the minimum element in the array
+	        int min = numbers[0];
+	        for (int i = 1; i < numbers.length; i++) {
+	            if (numbers[i] < min) {
+	                min = numbers[i];
+	            }
+	        }
+	        System.out.println("Minimum element: " + min);
+	    }
+
+}

@@ -1,0 +1,15 @@
+package com.practice;
+
+public class ClassA 
+{	
+	void explicit()
+	{
+		int i=10;
+		byte b=(byte) i;
+	}
+	
+	public static void main(String[] args) 
+	{
+
+	}
+}

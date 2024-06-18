@@ -1,0 +1,11 @@
+package in.ashokit.service;
+
+public class UserServiceImpl implements IUserService {
+
+	@Override
+	public String getName(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
